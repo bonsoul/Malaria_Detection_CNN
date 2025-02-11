@@ -22,8 +22,9 @@ Using **Torchvision**, we apply:
 ✔ **Data Augmentation**:  
    - **Random Horizontal Flip** → Helps model learn position invariance  
    - **Random Rotation** → Prevents orientation bias  
-   - **Color Jitter** → Simulates variations in staining and lighting  
-
+   - **Color Jitter** → Simulates variations in staining and lighting
+   - 
+![Images of the Cells](https://github.com/bonsoul/Malaria_Detection_CNN/blob/main/data_vis.png)
 ```python
 import torchvision.transforms as transforms
 
