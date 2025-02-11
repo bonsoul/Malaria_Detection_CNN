@@ -110,6 +110,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-4)
 
 ## **5️⃣ Model Evaluation**  
 After training, the model is tested on unseen validation data. Key performance metrics include:  
+![Confusion Matrix](https://github.com/bonsoul/Malaria_Detection_CNN/blob/main/Training%20Validation%20Loss%20with%20CNN%20from%20scratch.png)
 
 ### **📌 Confusion Matrix**
 ```python
