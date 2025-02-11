@@ -114,26 +114,11 @@ After training, the model is tested on unseen validation data. Key performance m
 ![Confusion Matrix](https://github.com/bonsoul/Malaria_Detection_CNN/blob/main/Training%20Validation%20Loss%20with%20CNN%20from%20scratch.png)
 
 ### **📌 Confusion Matrix**
-```python
-from sklearn.metrics import confusion_matrix
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-cm = confusion_matrix(y_true, y_pred)
-plt.figure(figsize=(6,6))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Parasitized', 'Uninfected'], yticklabels=['Parasitized', 'Uninfected'])
-plt.xlabel('Predicted')
-plt.ylabel('Actual')
-plt.title('Confusion Matrix')
-plt.savefig('plots/confusion_matrix.png')
-plt.show()
-```
+![CM](https://github.com/bonsoul/Malaria_Detection_CNN/blob/main/confusion_matrix.png)
 ✔ **Visualizes model performance** on classification  
 
 ### **📌 Precision, Recall & F1-Score**
 ```python
-from sklearn.metrics import precision_score, recall_score, f1_score
-
 prec = precision_score(y_true, y_pred, average='macro')
 rec = recall_score(y_true, y_pred, average='macro')
 f1 = f1_score(y_true, y_pred, average='macro')
